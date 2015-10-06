@@ -10,7 +10,7 @@ def is_prime
     # prime decision
     raise Exception if n < 3
   rescue Exception
-    'error: digit must be less than 3.'
+    puts 'error: digit must be less than 3.'
     retry
   end
 
