@@ -8,7 +8,6 @@ def is_prime
   
   # prime decision
   2.upto(Math.sqrt(n)) do |i|
-    puts n % i
     return false if n % i == 0
   end
   return true
