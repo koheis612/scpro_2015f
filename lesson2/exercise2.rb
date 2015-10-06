@@ -6,7 +6,6 @@ loop do
   print("input digit: ")
   num = STDIN.gets.chomp('\n').to_i
 
-  puts answer
   if num > answer
     puts "answer is smaller than #{num}"
   elsif num < answer
