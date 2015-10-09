@@ -1,13 +1,15 @@
 # coding: utf-8
-def is_prime
+
+prime = catch(:exit) do
   print 'input digit: '
   n = STDIN.gets.chomp('\n').to_i
   throw :exit if n < 3
+
   2.upto(Math.sqrt(n)) do |i|
-    return false if n % i == 0
+    throw :exit, false if n % i == 0
   end
-  
-  return true
+
+  throw :exit, true
 end
 
-puts catch(:exit) { is_prime }
+puts prime
