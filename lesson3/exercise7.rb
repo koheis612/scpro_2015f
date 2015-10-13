@@ -13,4 +13,3 @@ loop do
     dictionary.store(word, translation)
   end
 end
-

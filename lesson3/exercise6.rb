@@ -2,7 +2,7 @@
 
 # search insert position
 def search_index(array, num)
-  ret = array.index do |value|
+  array.index do |value|
     value >= num
   end
 end
@@ -10,7 +10,7 @@ end
 array = [0, 100]
 
 loop do
-  print "input digit from 1 to 99: "
+  print 'input digit from 1 to 99: '
   num = gets.to_i
 
   if num >= 1 && num <= 99
