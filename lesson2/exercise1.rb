@@ -1,8 +1,7 @@
 # coding: utf-8
 
-print("input digit: ")
+print 'input digit: '
 num = gets.to_i
-  
 
 num.times do |i|
   print ' ' * num
