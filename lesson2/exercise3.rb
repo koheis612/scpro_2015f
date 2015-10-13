@@ -4,10 +4,10 @@
 def is_prime
   # get stdin number
   print 'input digit: '
-  n = STDIN.gets.chomp('\n').to_i
+  n = gets.chomp.to_i
   
   # prime decision
-  2.upto(Math.sqrt(n)) do |i|
+  2.upto(sqrt(n)) do |i|
     return false if n % i == 0
   end
   return true

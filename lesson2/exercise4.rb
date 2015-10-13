@@ -5,7 +5,7 @@ def is_prime
   # get stdin number
   begin
     print 'input digit: '
-    n = STDIN.gets.chomp('\n').to_i
+    n = gets.chomp.to_i
 
     # prime decision
     raise Exception if n < 3
@@ -14,7 +14,7 @@ def is_prime
     retry
   end
 
-  2.upto(Math.sqrt(n)) do |i|
+  2.upto(sqrt(n)) do |i|
     return false if n % i == 0
   end
 
