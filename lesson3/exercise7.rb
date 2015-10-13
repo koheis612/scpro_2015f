@@ -8,7 +8,7 @@ loop do
   if dictionary[word]
     puts "Japanese：#{dictionary[word]}"
   else
-    print "In Japanese?: "
+    print 'In Japanese?: '
     translation = gets.chomp
     dictionary.store(word, translation)
   end
