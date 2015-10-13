@@ -2,8 +2,8 @@
 
 # search insert position
 def search_index(array, num)
-  ret = array.index do
-    |value| value >= num
+  ret = array.index do |value|
+    value >= num
   end
 end
 
