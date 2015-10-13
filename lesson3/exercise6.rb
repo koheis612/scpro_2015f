@@ -11,7 +11,7 @@ array = [0, 100]
 
 loop do
   print "input digit from 1 to 99: "
-  num = gets.chomp.to_i
+  num = gets.to_i
 
   if num >= 1 && num <= 99
     array.insert(search_index(array, num), num)

@@ -2,7 +2,7 @@
 
 is_prime = catch(:exit) do
   print 'input digit: '
-  n = gets.chomp.to_i
+  n = gets.to_i
   throw :exit if n < 3
 
   2.upto(sqrt(n)) do |i|

@@ -5,7 +5,7 @@ def is_prime
   # get stdin number
   begin
     print 'input digit: '
-    n = gets.chomp.to_i
+    n = gets.to_i
 
     # prime decision
     raise Exception if n < 3

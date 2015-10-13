@@ -3,12 +3,12 @@
 dictionary = { 'dog' => '犬', 'cat' => '猫' }
 
 loop do
-  print '英語：'
+  print 'English：'
   word = gets.chomp
   if dictionary[word]
-    puts "日本語：#{dictionary[word]}"
+    puts "Japanese：#{dictionary[word]}"
   else
-    print "日本語訳: "
+    print "In Japanese?: "
     translation = gets.chomp
     dictionary.store(word, translation)
   end
