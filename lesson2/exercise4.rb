@@ -14,7 +14,7 @@ def is_prime
     retry
   end
 
-  2.upto(sqrt(n)) do |i|
+  2.upto(Math.sqrt(n)) do |i|
     return false if n % i == 0
   end
 

@@ -7,7 +7,7 @@ def is_prime
   n = gets.to_i
   
   # prime decision
-  2.upto(sqrt(n)) do |i|
+  2.upto(Math.sqrt(n)) do |i|
     return false if n % i == 0
   end
   return true
